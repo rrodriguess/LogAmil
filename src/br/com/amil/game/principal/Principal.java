@@ -19,8 +19,19 @@ import br.com.amil.game.principal.util.ArrayListG;
 import br.com.amil.game.principal.util.Mascara;
 import br.com.amil.game.principal.util.PalavrasChaves;
 
+/**
+ * Classe Principal, responsabilidade de executar o programa
+ * 
+ * @author rrodr
+ *
+ */
 public class Principal {
-
+	/**
+	 * Metodo main, executa o programa e lança uma execessao caso
+	 * não exista o arquivo. 
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
 
 		BufferedReader read = new BufferedReader(new FileReader("../GameAmil/file/log.txt"));
@@ -93,7 +104,12 @@ public class Principal {
 		read.close();
 		resultadoDaPartida(listaDePartidas);
 	}
-
+	/**
+	 * Metodo responsável pela verificação da Partida e as ações dos jogadores
+	 * @param partida
+	 * @param assassino
+	 * @param horaInicialDaAcao
+	 */
 	private static void verificaPartida(Partida partida, Jogador assassino, Calendar horaInicialDaAcao) {
 		String nomeDoJogadorAssassinado = assassino.getNomeDoJogadorQueMorreu();
 		Jogador jogadorMorto = new Jogador();
@@ -154,14 +170,24 @@ public class Principal {
 		}
 
 	}
-
+	/**
+	 * Metodo responsável por inidicar a ação de um jogador
+	 * @param jogadorMatador
+	 * @return
+	 */
 	private static Calendar setHoraDaAcaoDo(Jogador jogadorMatador) {
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(jogadorMatador.getHoraDaAcao());
 
 		return calendar;
 	}
-
+	/**
+	 * Metodo encontraPalavraChave, responsável por verificar 
+	 * palavra chave dentro do texto do arquivo.
+	 * @param linha
+	 * @param palavra
+	 * @return
+	 */
 	private static boolean encontraPalavraChave(String linha, String palavra) {
 		// TODO Auto-generated method stub
 		if (linha.contains(palavra))
@@ -169,7 +195,11 @@ public class Principal {
 		else
 			return false;
 	}
-
+	/**
+	 * Metodo resultadoDaPartida, responsável por exibir um relatório 
+	 * da partida.
+	 * @param lista
+	 */
 	private static void resultadoDaPartida(List<Partida> lista) {
 		SimpleDateFormat format = new SimpleDateFormat(Mascara.DD_MM_AAAA_HH_MM_SS.getFormata());
 		ArrayListG<Arma> armasDaPartida =  new ArrayListG<Arma>();
