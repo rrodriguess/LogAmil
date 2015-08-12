@@ -1,0 +1,15 @@
+Executando o programa. 
+  
+  A classe que executa o programa está dentro do pacote Principal
+com o nome da classe Principal. 
+
+Resumo do programa.
+
+  Ao executar a classe, ela irá verificar o arquivo log.txt dentro
+da pasta file, com os dados de cada linha do arquivo, imprimindo 
+confome acessa cada linha.
+
+  Irá verificar as ações das classes Partida, Jogador e Arma e ao 
+final da execução irá imprimir no console um relatório da partida.
+
+ 
