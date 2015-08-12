@@ -5,7 +5,12 @@ import java.text.SimpleDateFormat;
 import br.com.amil.game.principal.entidades.Partida;
 import br.com.amil.game.principal.util.Mascara;
 import br.com.amil.game.principal.util.PosicaoDosCampoNoArquivo;
-
+/**
+ * Class QuebraDeDataHora, implementação da Interface QuebraDeLinha, 
+ * com o intuito de formatar a data e hora da Entidade Partida;
+ * @author rrodr
+ *
+ */
 public class QuebraDeDataHora implements QuebraDeLinha<Partida> {
 
 	@Override

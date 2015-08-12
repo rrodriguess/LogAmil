@@ -5,10 +5,14 @@ import java.util.Date;
 
 import br.com.amil.game.principal.util.ArrayListG;
 
+/**
+ * Classe Partida, representa a Entidade Partida, responsável 
+ * por verificar o jogadores e suas açõe e relações temporais da partida 
+ * @author rrodr
+ *
+ */
 public class Partida extends AcaoDe {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 361076995442184774L;
 	private boolean inicio;
 	private boolean fim;

@@ -4,7 +4,12 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import br.com.amil.game.principal.util.ArrayListG;
-
+/**
+ * Classe Jogador, representa a Entidade Jogador, responsável por identificar 
+ * jogadores e seu comportamento, tem relacao com as Entidades Arma e Partida
+ * @author rrodr
+ *
+ */
 public class Jogador extends AcaoDe implements Comparable<Jogador>{
 
 	private static final long serialVersionUID = -6867265119081586577L;

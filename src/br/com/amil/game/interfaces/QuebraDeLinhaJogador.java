@@ -7,9 +7,15 @@ import br.com.amil.game.principal.entidades.Jogador;
 import br.com.amil.game.principal.util.ArrayListG;
 import br.com.amil.game.principal.util.Mascara;
 import br.com.amil.game.principal.util.PosicaoDosCampoNoArquivo;
-
+/**
+ * Classe QuebraDeLinhaJogador, responsável por verificar dados 
+ * referente a jogadores setando dados vindos da linha do arquivo.
+ * Implementa método QuebraDeLinha
+ * @author rrodr
+ *
+ */
 public class QuebraDeLinhaJogador implements QuebraDeLinha<Jogador> {
-
+	
 	@Override
 	public Jogador quebraDeLinha(String[] linha) throws Exception {
 		Jogador jogadorQueMatou = new Jogador();
